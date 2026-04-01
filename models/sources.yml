@@ -1,0 +1,8 @@
+sources:
+  - name:  SOURCE
+    database: DBT_SFLAKE 
+    schema: SOURCE
+    tables:
+      - name: revenue_data_raw
+
+  

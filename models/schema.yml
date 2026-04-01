@@ -1,0 +1,13 @@
+models:
+  - name: silver_revenue
+    description: "Cleansed revenue"
+    columns:
+      - name: sale_id
+        description: "Primary Key"
+        tests:
+          - unique
+          - not_null
+      - name: total_revenue
+        description: "Revenue generated"
+        tests:
+          - not_null

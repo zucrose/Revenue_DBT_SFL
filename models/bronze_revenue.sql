@@ -1,0 +1,1 @@
+select * from {{  source('SOURCE','revenue_data_raw') }}
