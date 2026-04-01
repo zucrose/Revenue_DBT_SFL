@@ -1,18 +1,27 @@
 models:
+  - name: gold_revenue
+    description: "Aggregated revenue"
+    columns:
+      - name: 'sale_date'
+        description: "Date of sale"
+        data_tests:
+          - unique
+          
+           
   - name: silver_revenue
     description: "Cleansed revenue"
     columns:
       - name: sale_id
         description: "Primary Key"
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: total_revenue
         description: "Revenue generated"
-        tests:
+        data_tests:
           - not_null
       - name: quantity_sold
-        tests:
+        data_tests:
           - not_null
           
           
