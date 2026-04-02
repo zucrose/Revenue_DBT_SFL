@@ -1,7 +1,7 @@
 sources:
   - name:  SOURCE
-    database: DBT_SFLAKE 
-    schema: SOURCE
+    database: "{{ env_var('DBT_SOURCE_DB') }}"
+    schema: "{{ env_var('DBT_SOURCE_SCHEMA')}}"
     tables:
       - name: revenue_data_raw
 
